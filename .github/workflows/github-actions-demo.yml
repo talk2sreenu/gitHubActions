@@ -1,0 +1,17 @@
+name: Github Actions demo
+run-name: ${{github.actor}} is testing out GitHub actions
+on: [push]
+jobs:
+  explore-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out repository code
+        uses: actions/checkout@v4
+      - name: Runs Maven command
+        uses: actions/setup-jaba@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+      - name: build with maven
+        run: mvn clean install        
