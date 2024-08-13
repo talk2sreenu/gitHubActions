@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -17,9 +18,13 @@ public class SeleniumTests {
 	@BeforeTest
 	void initializeDriver() {
 		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		 ChromeOptions options = new ChromeOptions();
+		 options.addArguments("--no-sandbox");
+		 options.addArguments("--disable-dev-shm-usage");
+		 options.addArguments("--headless");
+		driver = new ChromeDriver(options);
 		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 	}
@@ -35,7 +40,7 @@ public class SeleniumTests {
 		String pageTitle = driver.getTitle();
 		
 		Assert.assertTrue(pageTitle.contains("About"));
-		
+		System.out.println("Test Execution completed successfully");
 	}
 	
 	@AfterTest

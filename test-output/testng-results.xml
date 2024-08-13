@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-12T21:28:54 EDT" name="Suite" finished-at="2024-08-12T21:29:16 EDT" duration-ms="21547">
+  <suite started-at="2024-08-12T21:42:14 EDT" name="Default suite" finished-at="2024-08-12T21:42:24 EDT" duration-ms="10166">
     <groups>
     </groups>
-    <test started-at="2024-08-12T21:28:54 EDT" name="Test" finished-at="2024-08-12T21:29:16 EDT" duration-ms="21547">
+    <test started-at="2024-08-12T21:42:14 EDT" name="Default test" finished-at="2024-08-12T21:42:24 EDT" duration-ms="10166">
       <class name="com.testNGSuite.SeleniumTests">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:com.testNGSuite.SeleniumTests@71def8f8]" started-at="2024-08-12T21:28:54 EDT" name="initializeDriver" finished-at="2024-08-12T21:29:01 EDT" duration-ms="6398" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:com.testNGSuite.SeleniumTests@71def8f8]" started-at="2024-08-12T21:42:14 EDT" name="initializeDriver" finished-at="2024-08-12T21:42:18 EDT" duration-ms="3361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="verifyApplicationPage()[pri:0, instance:com.testNGSuite.SeleniumTests@71def8f8]" started-at="2024-08-12T21:29:01 EDT" name="verifyApplicationPage" finished-at="2024-08-12T21:29:15 EDT" duration-ms="14702" status="PASS">
+        <test-method signature="verifyApplicationPage()[pri:0, instance:com.testNGSuite.SeleniumTests@71def8f8]" started-at="2024-08-12T21:42:18 EDT" name="verifyApplicationPage" finished-at="2024-08-12T21:42:24 EDT" duration-ms="6700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApplicationPage -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.testNGSuite.SeleniumTests@71def8f8]" started-at="2024-08-12T21:29:15 EDT" name="closeDriver" finished-at="2024-08-12T21:29:16 EDT" duration-ms="378" status="PASS">
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.testNGSuite.SeleniumTests@71def8f8]" started-at="2024-08-12T21:42:24 EDT" name="closeDriver" finished-at="2024-08-12T21:42:24 EDT" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
       </class> <!-- com.testNGSuite.SeleniumTests -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
