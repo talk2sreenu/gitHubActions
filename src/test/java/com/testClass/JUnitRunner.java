@@ -8,6 +8,7 @@ public class JUnitRunner {
 	@Test
 	void firstjUnitTest() {
 		assertEquals(true, true);
+		System.out.println("First Junit test is executed");
 	}	
 	
 }
